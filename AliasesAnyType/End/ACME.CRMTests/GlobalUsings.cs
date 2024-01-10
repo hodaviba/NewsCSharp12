@@ -1,0 +1,11 @@
+﻿global using Role = ACME.CRMTests.HR.Types.Role;
+global using CustomerType = ACME.CRMTests.Sales.Types.CustomerType;
+global using HRPerson = ACME.CRMTests.HR.Models.Person;
+global using SalesPerson = ACME.CRMTests.Sales.Models.Person;
+global using QuotationResult = (double total, int totalProducts);
+global using PaymentResult = (string guid, double calculation);
+global using ACME.CRMTests.HR.BL;
+global using ACME.CRMTests.Sales.Products;
+global using ACME.CRMTests.Sales.BL;
+global using ProcessorInput = (ACME.CRMTests.HR.Types.Role role, int daysWorked);
+global using QuotationInput = (System.Collections.Generic.List<ACME.CRMTests.Sales.Products.BaseProduct> products, ACME.CRMTests.Sales.Types.CustomerType type, bool IsDiscountsDay);
